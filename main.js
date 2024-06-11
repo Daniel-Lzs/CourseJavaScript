@@ -1,8 +1,3 @@
-// let friends = ['Adriel', 'Gabriel', 'Marcos', 'Jonas']
-let friends = ['Alan', 'Mark', 'Julia', 'Bella']
-console.log(friends)
-friends[1] = 'Anna' // replace
-friends[4] = 'Maverick' // insert
-friends[5] = 1 // insert
-console.log(friends)
-console.log(friends[1])
+let celsius = parseFloat(prompt('Digite o número em celsius: '))
+let fahrenheit = (celsius * 1.8) + 32
+alert('A temperatura em farenheit é de: ' + fahrenheit.toFixed(2))
