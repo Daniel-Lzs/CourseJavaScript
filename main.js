@@ -1,18 +1,18 @@
-let nota = parseFloat(prompt('Insira a sua nota: '))
+let grade = parseFloat(prompt('Insira a sua grade: '))
 
-if (nota >= 90 && nota <= 100){
-    alert('Você tirou a nota A')
+if (grade >= 90 && grade <= 100){
+    alert('Você tirou a grade A')
 }
-else if(nota >= 80 && nota <= 89){
-    alert('Você tirou a nota B')
+else if(grade >= 80 && grade <= 89){
+    alert('Você tirou a grade B')
 }
-else if(nota >= 70 && nota <= 79){
-    alert('Você tirou a nota C')
+else if(grade >= 70 && grade <= 79){
+    alert('Você tirou a grade C')
 }
-else if(nota >= 60 && nota <= 69){
-    alert('Você tirou a nota D')
+else if(grade >= 60 && grade <= 69){
+    alert('Você tirou a grade D')
 }
-else if (nota > 100 || nota < 0){
+else if (grade > 100 || grade < 0){
     alert('A nota inserida é inválida')
 }
 else{
