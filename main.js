@@ -1,12 +1,9 @@
-let age = parseInt(prompt('Insira sua idade: '))
-let voterCard = prompt('Você tem um título de eleitor (sim/nao)').trim().charAt(0).toLowerCase()
-let minAge = 18 
-if (age >= minAge && voterCard == 's'){
-    alert('Pode votar')
-}
-else if(age >= minAge && voterCard == 'n'){
-    alert('Precisa de título')
-}
-else{
-    alert('Não pode votar')
-}
+let valorConta = parseFloat(prompt('Digite o valor da conta: '))
+let gorjeta = parseFloat(prompt('Digite o valor da gorjeta: '))
+
+// gorjeta = (valorConta * gorjeta) /100
+// let valorTotal = valorConta + gorjeta
+
+let valorTotal = valorConta + (valorConta * gorjeta)/100
+
+alert('O valor total da gorjeta é de $: ' + valorTotal)
