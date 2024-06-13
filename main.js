@@ -1,6 +1,20 @@
-function changeBackgroundColor(){
-    let colors = ['red', 'green', 'yellow', 'orange', 'pink']
-    randomColor = colors[Math.floor(Math.random() * colors.length)]
-    document.body.style.backgroundColor = randomColor
-    console.log(Math.floor(Math.random() * colors.length))
+let randomNumber = Math.floor(Math.random()*100)
+let tries = 0
+console.log(randomNumber)
+
+function checkGuess(){
+    let guess = document.getElementById('guess').value
+    let message = document.getElementById('message')
+    tries++
+
+    if (guess == randomNumber){
+        message.innerHTML = 'Congratulation, you guessed the number in '+ tries + ' tries!'
+    }
+    else if(guess < randomNumber){
+        message.innerHTML = 'Too low. Try again!'
+    }
+    else{
+        message.innerHTML = 'Too high. Try again!'
+    }
+
 }
