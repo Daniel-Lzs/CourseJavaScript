@@ -1,19 +1,9 @@
-let randomNumber = Math.floor(Math.random()*100)
-let tries = 0
+let checkButton = document.getElementById('check-button')
+let ageInput = document.getElementById('age-input')
 
-function checkGuess(){
-    let guess = document.getElementById('guess').value
-    let message = document.getElementById('message')
-    tries++
-
-    if (guess == randomNumber){
-        message.innerHTML = 'Congratulation, you guessed the number in '+ tries + ' tries!'
-    }
-    else if(guess < randomNumber){
-        message.innerHTML = 'Too low. Try again!'
-    }
-    else{
-        message.innerHTML = 'Too high. Try again!'
-    }
-
-}
+checkButton.addEventListener('click', function(){
+    let age = ageInput.value
+    let message = (age >= 18) ? 'You are a adult' : 'You are not a adult'
+    alert(message)
+    ageInput.value = ''
+})
