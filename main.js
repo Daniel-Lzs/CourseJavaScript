@@ -1,6 +1,5 @@
 let randomNumber = Math.floor(Math.random()*100)
 let tries = 0
-console.log(randomNumber)
 
 function checkGuess(){
     let guess = document.getElementById('guess').value
