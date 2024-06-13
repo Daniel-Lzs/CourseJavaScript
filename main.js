@@ -1,9 +1,11 @@
-let colorList = []
+let numberList = document.getElementById('numberlist')
+let fruits = ['Pêra', 'Uva', 'Maçã', 'Laranja', 'Melancia']
 
-for (let i = 1; i <= 3; i++){
-    let userColor = prompt('Digite a cor ' + i + ' : ' )
-    colorList.push(userColor)
-    // colorList[i] = userColor // Primeiro indice vazio
+for (i = 0; i <= 4; i++){
+    let listItem = document.createElement('li')
+    // listItem.textContent = 'Item ' + i
+    listItem.textContent = fruits[i]
+    numberList.appendChild(listItem)
 }
-document.getElementById('listacores').innerHTML = colorList
-// alert('Sua lista de cores ficou assim: ' + colorList)
+
+
